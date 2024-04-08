@@ -44,6 +44,7 @@ public class TestCryptoMarche {
         double capitalAlice   = marche.capitalEnEuros("Alice");
         
         System.out.print("Test CryptoMarche capitalEnEuros \t ...");
+
         if (capitalAntoine == 620000 && capitalAlice == 175000)
             System.out.println(" OK");
         else
@@ -54,6 +55,7 @@ public class TestCryptoMarche {
         double capitalEth = marche.capitalMonnaie(ethereum);
 
         System.out.print("Test CryptoMarche capitalMonneaie \t ...");
+
         if (capitalBtc == 775000 && capitalEth == 20000)
             System.out.println(" OK");
         else
