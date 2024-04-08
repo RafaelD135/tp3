@@ -39,6 +39,7 @@ public class Portefeuille {
 	
 	if ( montantEuros > 0)
 	{
+		this.montant = this.montant + montantEuros / (this.monnaie.getValeurDeJeton());
 		return true;
 	}
     return false;
