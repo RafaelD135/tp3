@@ -9,3 +9,6 @@
 ### Compte-rendu TP1 Introduction GIT
 
 Dans ce TP on apprend à travailler avec git.
+
+Le ls nous donne README.md  src  test.txt
+
