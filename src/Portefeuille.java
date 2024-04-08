@@ -19,9 +19,9 @@ public class Portefeuille {
    * @return Vrai si la transaction a été effectuée, faux sinon.  
    */
   public boolean transfertDevise (Portefeuille destination, double montantJetons){
-	if ((this.getMonnaie()).nom == (destination.getMonnaie()).nom && this.montant >= destination.montant)
+	if ((this.getMonnaie()).getNom() == (destination.getMonnaie()).getNom() && this.montant >= destination.montant)
 	{
-		destination.monnaie += montantJetons;
+		destination.montant = destination.montant + montantJetons;
 		return true;
 	}
     return false;
