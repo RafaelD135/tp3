@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.sound.sampled.Port;
+
 public class CryptoMarche {
 
     private ArrayList<Portefeuille> portefeuilles;
@@ -28,8 +30,13 @@ public class CryptoMarche {
         /**
 			FONCTION À IMPLEMENTER
         **/
+        double capital = 0;
 
-        return 0;
+        for (Portefeuille p : portefeuilles)
+            if (p.getProprietaire().equals(proprietaire))
+                capital += p.getMontant();
+
+        return capital; 
     }
 
     /**
@@ -39,13 +46,17 @@ public class CryptoMarche {
      * @param monnaie
      * @return capital total en circulation de la cryptomonnaie (en euros).
      */
-    public double capitalMonneaie(Cryptomonnaie monnaie){
+    public double capitalMonnaie(Cryptomonnaie monnaie){
         /**
 			FONCTION À IMPLEMENTER
         **/
+        double somme = 0;
 
-        return 0;
+        for (Portefeuille p : portefeuilles)
+            if (p.getMonnaie().equals(monnaie))
+                somme += p.getMontant();
 
+        return somme;
     }
 
     @Override
