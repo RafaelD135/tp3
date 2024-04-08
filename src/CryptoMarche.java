@@ -46,7 +46,7 @@ public class CryptoMarche {
      * @param monnaie
      * @return capital total en circulation de la cryptomonnaie (en euros).
      */
-    public double capitalMonnaie(Cryptomonnaie monnaie){
+    public double capitalMonnaie(Cryptomonneaie monnaie){
         /**
 			FONCTION À IMPLEMENTER
         **/
