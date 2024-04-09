@@ -19,3 +19,5 @@ La commande ls donne :
 README.md  src  test.txt
 >>>>>>> 0d270fceb3102e200bf225c5e37546438e6e8b78
 
+
+Test
